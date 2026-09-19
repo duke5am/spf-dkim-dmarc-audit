@@ -1,5 +1,4 @@
-# email-auth-check
-
+# spf-dkim-dmarc-audit
 Audit a domain's **SPF, DKIM and DMARC** against live DNS, with explanations and
 a concrete fix for every finding. No dependencies — it speaks DNS itself.
 
