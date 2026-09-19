@@ -93,4 +93,4 @@ If you arrived here searching for one of these, this is the tool: **spf dkim dma
 
 <!-- RELATED:END -->
 
-→ More developer tooling like this: **[duke5am.gumroad.com](https://duke5am.gumroad.com)** <!-- GUMROAD-LINK -->
+→ **[Email Auth DNS Audit & Fix Templates](https://duke5am.gumroad.com/l/27-email-auth-dns)** — $34 on Gumroad <!-- GUMROAD-LINK -->
