@@ -80,4 +80,17 @@ console and cannot be invented), the safe migration path from `p=none` to
 `p=reject`, the common-breakages catalogue, the plain-language glossary, and 184
 tests on 49 recorded real-DNS fixtures.
 
+<!-- RELATED:START -->
+
+## Related tools
+
+- **[google-oauth-verification-preflight](https://github.com/duke5am/google-oauth-verification-preflight)** — Preflight an OAuth consent screen before submitting for Google verification: scope classification, branding requirements and the common rejection reasons.
+  *(if you were searching for "google oauth verification rejected")*
+
+All 28 tools in this set, grouped by what they check: **[dev-tools-index](https://duke5am.github.io/dev-tools-index/)**
+
+If you arrived here searching for one of these, this is the tool: **spf dkim dmarc check** · **spf lookup limit exceeded** · **dmarc policy audit** · **why do my emails go to spam**
+
+<!-- RELATED:END -->
+
 → More developer tooling like this: **[duke5am.gumroad.com](https://duke5am.gumroad.com)** <!-- GUMROAD-LINK -->
