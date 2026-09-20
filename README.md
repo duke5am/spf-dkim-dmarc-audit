@@ -1,8 +1,22 @@
 # spf-dkim-dmarc-audit
+
+[![PyPI](https://img.shields.io/pypi/v/spf-dkim-dmarc-audit)](https://pypi.org/project/spf-dkim-dmarc-audit/)
+
 Audit a domain's **SPF, DKIM and DMARC** against live DNS, with explanations and
 a concrete fix for every finding. No dependencies — it speaks DNS itself.
 
 ```bash
+pip install spf-dkim-dmarc-audit         # from PyPI, Python 3.9+
+spf-dkim-dmarc-audit --domain example.com
+spf-dkim-dmarc-audit --domain example.com --dkim-selector s1 --json
+spf-dkim-dmarc-audit --test-spf "v=spf1 include:_spf.google.com -all"
+```
+
+Or straight from a clone, no install — the same code either way:
+
+```bash
+git clone https://github.com/duke5am/spf-dkim-dmarc-audit
+cd spf-dkim-dmarc-audit
 python3 audit.py --domain example.com
 python3 audit.py --domain example.com --dkim-selector s1 --json
 python3 audit.py --test-spf "v=spf1 include:_spf.google.com -all"

@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "spf-dkim-dmarc-audit"
+version = "0.1.0"
+description = "Audit a domain's SPF, DKIM, DMARC, MX, MTA-STS, TLS-RPT and BIMI records against live DNS and print the exact record to publish"
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "duke5am" }]
+keywords = [
+  "spf", "dkim", "dmarc", "email-authentication", "dns",
+  "deliverability", "mta-sts", "tls-rpt", "bimi", "email-security",
+]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Environment :: Console",
+  "Intended Audience :: System Administrators",
+  "Topic :: Communications :: Email",
+  "Topic :: Internet :: Name Service (DNS)",
+  "Topic :: System :: Systems Administration",
+]
+# Deliberately empty: this tool is standard-library only. That is a selling
+# point (nothing to install, nothing to audit), so no dependency is added here
+# just to make packaging easier.
+dependencies = []
+
+[project.scripts]
+spf-dkim-dmarc-audit = "spf_dkim_dmarc_audit.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/duke5am/spf-dkim-dmarc-audit"
+Issues = "https://github.com/duke5am/spf-dkim-dmarc-audit/issues"
+
+[tool.setuptools]
+packages = ["spf_dkim_dmarc_audit"]
+include-package-data = true

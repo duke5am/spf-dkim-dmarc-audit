@@ -1,0 +1,5 @@
+# No runtime data files: this tool is standard library only and reads no files
+# of its own (it reads /etc/resolv.conf when present, which is not shippable).
+# README.md and LICENSE are included so the sdist is self-describing.
+include README.md
+include LICENSE
